@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Clothes Shop | ASCRA</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+  </head>
+  <body>
+    <header >
+      <!-- menu bar for desktop start-->
+      <nav class="d-none d-md-block container">
+        <div class="nav-top">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link">Welcome to Clothes Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Sign-in">Sign in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cart"><img src="assets/images/cart.png" alt="cart-img">  Cart <span class="cart-count">(0)</span></a>
+                </li>   
+            </ul>
+        </div>
+        <div class="navbar nav-mid">
+            <a class="navbar-brand" title="Clothes Shop"><img src="assets/images/logo.png" alt="Clothes Shop logo"></a>
+            <div class="search-wrapper">
+              <p class="mr-sm-2 mb-sm-3"><img src="assets/images/truk.png" alt="Free Shipping"> Free Shipping</p>
+              <div class="search-inputBox">
+                <input class="search-input" type="text" placeholder="Search this site" aria-label="Search">
+              </div>
+            </div>
+        </div>
+        <div class="nav-bottom">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#Shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Measurement-Profile">Measurement Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Customize">Customize</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#How-It-Works">How It Works</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+       <!-- menu bar for desktop End-->
+
+      <!-- menu bar for mobile start-->
+      <nav class="d-block d-md-none navbar m-navbar navbar-light bg-light">
+        <div class="m-nav-wrapper">
+          <ul class="nav mr-auto">
+          <li><img src="assets/images/menu.png" onclick="openNav()" class="m-menu" alt="menu"></li>
+          <li><img src="assets/images/logo.png" class="m-logo" alt="logo"></li>
+          </ul>
+          <a class="m-cart" href="#cart"><img src="assets/images/cart.png" alt="cart"></a>
+          <a class="m-SignIn" href="#Sign-in">Sign in</a>
+        </div>
+        <div class="search-inputBox">
+          <input class="search-input" type="text" placeholder="Search this site" aria-label="Search">
+        </div>
+        <!-- side navbar for mobile -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#Shop">Shop</a>
+          <a href="#Measurement">Measurement Profile</a>
+          <a href="#Customize">Customize</a>
+          <a href="#How-It-Works">How It Works</a>
+        </div>
+        <!-- side navbar for mobile -->
+      </nav> 
+      <!-- menu bar for mobile End-->
+    </header>
+    <main>
+      <div class="container">
+        <section class="row">
+          <div class="col-md-2 p-0">
+            <section class="d-flex d-md-none filter-mobile-box">
+              <button class="apply-btn" onclick="openFilter()"><img src="assets/images/filter.png" alt="filter"> Filter</button>
+            </section>
+            <div class="filter-wrapper">
+              <section class="d-flex d-md-none filter-header">
+                <span  onclick="closeFilter()"><img src="assets/images/left-arrow.png" alt="left-arrow"></span>
+                <span class="filter-title">Filters</span>
+              </section>
+              <section class="d-flex d-md-none filter-footer">
+                <button class="apply-btn" onclick="closeFilter()">Apply</button>
+              </section>
+              <section class="filter-box">
+                <h4 class="filter-heading">Occasion</h4>
+                <ul class="unstyled">
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Dress-Shirts" name="Dress-Shirts" value="Dress-Shirts">
+                    <label for="Dress-Shirts">Dress Shirts</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Friday-Casuals" name="Friday-Casuals" value="Friday-Casuals">
+                  <label for="Friday-Casuals">Friday Casuals</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Sunday-Brunches" name="Sunday-Brunches" value="Sunday-Brunches">
+                  <label for="Sunday-Brunches">Sunday Brunches</label>
+                  </li>
+                </ul>
+              </section>
+              <section class="filter-box">
+                <h4 class="filter-heading">Colour</h4>
+                <ul class="unstyled">
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="White" name="White" value="White">
+                    <label for="White">White</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Pink" name="Pink" value="Pink">
+                  <label for="Pink">Pink</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Grey" name="Grey" value="Grey">
+                  <label for="Grey">Grey</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Black" name="Black" value="Black">
+                  <label for="Black">Black</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Red" name="Red" value="Red">
+                  <label for="Red">Red</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Blue" name="Blue" value="Blue">
+                  <label for="Blue">Blue</label>
+                  </li>
+                </ul>
+              </section>
+              <section class="filter-box">
+                <h4 class="filter-heading">Pattern</h4>
+                <ul class="unstyled">
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Stripes" >
+                    <label for="Stripes">Stripes</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Checks" >
+                  <label for="Checks">Checks</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Plains">
+                  <label for="Plains">Plains</label>
+                  </li>
+                </ul>
+              </section>
+              <section class="filter-box">
+                <h4 class="filter-heading">Fabrics</h4>
+                <ul class="unstyled">
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Plain" >
+                    <label for="Plain">Plain</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Poplin" >
+                  <label for="Poplin">Poplin</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Oxford">
+                  <label for="Oxford">Oxford</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Fil-a-fil">
+                  <label for="Fil-a-fil">Fil-a-fil</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Twill">
+                  <label for="Twill">Twill</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Herring bone">
+                  <label for="Herring bone">Herring bone</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Dobby">
+                  <label for="Dobby">Dobby</label>
+                  </li>
+                </ul>
+              </section>
+              <section class="filter-box">
+                <h4 class="filter-heading">Collar</h4>
+                <ul class="unstyled">
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Classic" >
+                    <label for="Classic">Classic</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Buttoned Down" >
+                  <label for="Buttoned Down">Buttoned Down</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Spread">
+                  <label for="Spread">Spread</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Wide Spread" >
+                  <label for="Wide Spread">Wide Spread</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Wing type" >
+                  <label for="Wing type">Wing type</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" type="checkbox" id="Banded" >
+                  <label for="Banded">Banded</label>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <h1 class="main-heading">DRESS SHIRTS</h1>
+            <section class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="row row-cols-1 row-cols-md-3">
+                  <div class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/blueShirt.png"  alt="blueShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/redShirt.png"  alt="redShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div  class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/orange.png"  alt="orangeShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/blueShirt.png"  alt="blueShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/redShirt.png"  alt="redShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div  class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/orange.png"  alt="orangeShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/blueShirt.png"  alt="blueShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/redShirt.png"  alt="redShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div  class="col mb-4">
+                    <a href="#" class="card h-100">
+                      <div class="card-img-wrapper">
+                        <img src="assets/images/products/orange.png"  alt="orangeShirt">
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-small">Custom-Fit Checked Dress Shirt</p>
+                        <h5 class="card-amt">Rs. 3000/-</h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="product-banner"></section>
+      </div>
+    </main>
+    <footer> 
+      <section class="footer-top-wrapper">
+        <div  class="container">
+          <div class="footer-top">
+            <img class="Trust-logo" src="assets/images/treadLogo.png" alt="Trust">
+            <p class="payment-text mr-auto">Need Help? Call Us On: <a href="tel:+91 98204 16772">+91 98204 16772 </a></p>
+            <ul class="paymentMode">
+              <li><img src="assets/images/paymentMode/netBanking.png" alt="netBanking"></li>
+              <li><img src="assets/images/paymentMode/cod.png" alt="cod"></li>
+              <li><img src="assets/images/paymentMode/masterCard.png" alt="masterCard"></li>
+              <li><img src="assets/images/paymentMode/visa.png" alt="visa"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-mid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Why 16 Stitches </a></li>
+                <li><a href="#">About us </a></li>
+                <li><a href="#">How it works </a></li>
+                <li><a href="#">Our Shirts </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#"> Privacy Policy </a></li>
+                <li><a href="#">FAQs  </a></li>
+                <li><a href="#">Return & Delivery Policy </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Style Guide</a></li>
+                <li><a href="#">Fabrics Manual</a></li>
+                <li><a href="#">Measurement Profile   </a></li>
+                <li><a href="#">Size Chart  </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Gift Voucher </a></li>
+                <li><a href="#">Contact a Travelling Tailor </a></li>
+                <li><a href="#"> Order Fabric Swatches  </a></li>
+                <li><a href="#">Contact us   </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 connect-wrapper">
+              <h4 class="connect-text">Connect With Us</h4>
+              <ul class="connect-icon">
+                <li><a href="#"><img src="assets/images/socialMedia/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="assets/images/socialMedia/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="assets/images/socialMedia/pintrest.png" alt="pintrest"></a></li>
+                <li><a href="#"><img src="assets/images/socialMedia/wordpress.png" alt="wordpress"></a></li>
+                <li><a href="#"><img src="assets/images/socialMedia/instagram.png" alt="instagram"></a></li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <div class="email-wrapper">
+                <p class="Subscribe">Subscribe to Our Newsletter</p>
+                <div class="e-wrapper">
+                  <input class="email-text" type="email" placeholder="Email Address">
+                  <p class="email-tip">* Your personal information will not be shared with third parties</p>
+                </div>
+                <button class="send-btn">send</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-end">
+        <div class="container">
+          <p class="smallText">Copyright &copy; 16Stitches 2013   |   All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+    <script src="assets/js/jquery-3.4.1.slim.min.js" ></script>
+    <script src="assets/js/popper.min.js" ></script>
+    <script src="assets/js/bootstrap.min.js" ></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
